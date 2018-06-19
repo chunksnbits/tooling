@@ -5,9 +5,19 @@ This file repository collects a number of tools and best practices recommended f
 **Note** This repository uses [lightweight architectural deicions records](docs/adr) to document background information on the tools recommended in this project.
 See [adr folder](docs/adr) for aditional overview over the tools and best practices added.
 
-## Tools
+## Git commit hooks
 
-### husky
+The use of git commit hooks allows to ensure coding standard before merging changes into the development or master branch. In general hooks are advisable for:
+
+* linting(*)
+* testing(*)
+* commit messages
+
+(*) can be moved to other parts of the development stack, e.g., onto a Jenkins or Gitlabs task runner, depending on setup
+
+### Tooling
+
+#### husky
 
 [husky](https://github.com/typicode/husky) provides an easy an solution to handling commit hooks.
 
@@ -57,6 +67,9 @@ with those types:
   - revert: reverts a previous commit
   - test: a commit purely to for testing purposes without functional impact
 
+### Tooling
+
+#### commiizen and commitlint
 Tool support is available through [commitizen](https://github.com/commitizen/cz-cli) (cli-tool) and [commitlint](https://github.com/marionebl/commitlint) (lints commits).
 
 **installation**
@@ -64,6 +77,35 @@ Tool support is available through [commitizen](https://github.com/commitizen/cz-
 ```shell
 yarn add commitizen commitlint cz-customizable --dev
   # alternatively: npm install commitizen commitlint cz-customizable --save-dev
+```
+
+**configuration examples**
+
+```json
+// package.json
+{
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-customizable"
+    },
+    "cz-customizable": {
+      "config": ".cz-config.js"
+    }
+  }
+}
+```
+
+```js
+// .cz-config.js
+module.exports = {
+	allowBreakingChanges: ['feat', 'fix'],
+	allowCustomScopes: true,
+	scopes: ['system'],
+	types: [
+		{ value: 'feat', name: 'feat:     A new feature' },
+    ...
+  ]
+};
 ```
 
 **usage example**
@@ -79,6 +121,17 @@ yarn commit # alternatively: npm run commit
 ## Versioning
 
 Versioning following [semantic versioning](https://semver.org/), based on [conventional commits](https://conventionalcommits.org/) is a widely adopted practice of version setting (esp. in open-source projects).
+
+A semantic version has the form of `<major>.<minor>.<patch>`, e.g. `1.4.3`, whereas:
+
+- a *major* version indicates incompatible API / application changes -
+in an application project often tied to production releases or to indicate different stages in development.
+- a *minor* indicates added functionality in a backwards-compatible manner
+- a *patch* version indicates the addition of backwards-compatible bug fixes.
+
+### Tooling
+
+#### standard-version
 
 To aid the generation of versions, including related artifacts like changelog, [standard-version](https://github.com/conventional-changelog/standard-version) can be used.
 
