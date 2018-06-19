@@ -76,3 +76,43 @@ git commit -m "feat(button): adds button component #pr-123"
 yarn commit # alternatively: npm run commit
 ```
 
+## Versioning
+
+Versioning following [semantic versioning](https://semver.org/), based on [conventional commits](https://conventionalcommits.org/) is a widely adopted practice of version setting (esp. in open-source projects).
+
+To aid the generation of versions, including related artifacts like changelog, [standard-version](https://github.com/conventional-changelog/standard-version) can be used.
+
+**installation**
+
+```shell
+yarn add standard-version --dev # alternatively npm install standard-version --save-dev
+```
+
+**configuration examples**
+
+```json
+// package.json
+{
+  "scripts": {
+    "release": "standard-version"
+  }
+}
+```
+
+**usage example**
+
+```shell
+```
+
+Running `yarn release` will automatically:
+1. update the `version` field in [package.json](package.json)
+2. create a commit (including commit-message following the standard defined [commit messages](#commit-messages))
+3. create a tag with version
+4. push commit and tag to `remote`
+
+For version detection semantic-version will consider the following commit types:
+- `fix` will result in a `patch` version bump
+- `feat` will result in a `minor` version bump
+- adding `BREAKING CHANGE: <description of breaking change>` will result in a `major` version bump
+
+If necessary (e.g., for applications that usually do not create breaking changes) it is also possible to use `--release-as <major|minor|patch>` to force a `major` bump

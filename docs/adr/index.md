@@ -7,6 +7,7 @@ This log lists the architectural decisions for the tools and practices defined i
 - [ADR-0001](0001-use-architectural-decision-records) - Use Architectural Decision Records
 - [ADR-0002](0002-use-husky-for-git-hooks.md) - Use husky for git hooks
 - [ADR-0003](0003-use-commitizen-commitlint.md) - Use commitizen and commitlint for git commits
+- [ADR-0004](0004-use-standard-version-for-versioning.md) - Use standard-version for versioning
 
 <!-- adrlogstop -->
 

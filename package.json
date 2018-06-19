@@ -14,6 +14,7 @@
   "scripts": {
     "commit": "git-cz",
     "commitlint": "commitlint",
+    "release": "standard-version"
   },
   "dependencies": {
     "@commitlint/cli": "^6.2.0",
@@ -23,6 +24,7 @@
     "commitlint": "^7.0.0",
     "cz-customizable": "^5.2.0",
     "husky": "^0.14.3",
+    "standard-version": "^4.4.0",
   },
   "devDependencies": {},
   "config": {
