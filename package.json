@@ -14,8 +14,12 @@
   "scripts": {
   },
   "dependencies": {
+    "husky": "^0.14.3",
   },
   "devDependencies": {},
   "config": {
+  "husky": {
+    "hooks": {
+    }
   }
 }

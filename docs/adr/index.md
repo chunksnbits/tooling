@@ -5,6 +5,7 @@ This log lists the architectural decisions for the tools and practices defined i
 <!-- adrlog -- Regenerate the content by using "adr-log -i". You can install it via "npm install -g adr-log" -->
 
 - [ADR-0001](0001-use-architectural-decision-records) - Use Architectural Decision Records
+- [ADR-0002](0002-use-husky-for-git-hooks.md) - Use husky for git hooks
 
 <!-- adrlogstop -->
 
