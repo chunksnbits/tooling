@@ -12,14 +12,30 @@
   "license": "MIT",
   "main": "index.js",
   "scripts": {
+    "commit": "git-cz",
+    "commitlint": "commitlint",
   },
   "dependencies": {
+    "@commitlint/cli": "^6.2.0",
+    "@commitlint/config-conventional": "^6.1.3",
+    "codelyzer": "^4.0.1",
+    "commitizen": "^2.10.1",
+    "commitlint": "^7.0.0",
+    "cz-customizable": "^5.2.0",
     "husky": "^0.14.3",
   },
   "devDependencies": {},
   "config": {
+    "commitizen": {
+      "path": "node_modules/cz-customizable"
+    },
+    "cz-customizable": {
+      "config": ".cz-config.js"
+    }
+  },
   "husky": {
     "hooks": {
+      "commit-msg": "yarn commitlint",
     }
   }
 }
