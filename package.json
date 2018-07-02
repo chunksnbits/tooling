@@ -13,7 +13,7 @@
   "main": "index.js",
   "scripts": {
     "commit": "git-cz",
-    "commitlint": "commitlint",
+    "commitlint": "commitlint -e $GIT_PARAMS",
     "release": "standard-version"
   },
   "dependencies": {
