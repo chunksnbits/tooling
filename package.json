@@ -13,7 +13,7 @@
   "main": "index.js",
   "scripts": {
     "commit": "git-cz",
-    "commitlint": "commitlint",
+    "commitlint": "commitlint -e $GIT_PARAMS",
     "lint": "tslint -p tsconfig.json",
     "release": "standard-version"
   },
