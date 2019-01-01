@@ -1,6 +1,6 @@
 {
   "name": "tooling",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "author": "Daniel Eissing <mail.daniel.eissing@gmail.com>",
   "description": "A opinionated set of standard development tools to help setting up new projects",
   "keywords": [
@@ -14,7 +14,7 @@
   "scripts": {
     "commit": "git-cz",
     "commitlint": "commitlint",
-    "lint": "tslint -p tsconfig.json && stylelint 'src/**/*.scss'",
+    "lint": "tslint -p tsconfig.json",
     "release": "standard-version"
   },
   "dependencies": {
@@ -29,9 +29,6 @@
     "rimraf": "^2.6.2",
     "serve": "^9.0.0",
     "standard-version": "^4.4.0",
-    "stylelint": "^9.3.0",
-    "stylelint-config-standard": "^18.2.0",
-    "stylelint-selector-bem-pattern": "^2.0.0",
     "tslint": "^5.12.0",
     "tslint-eslint-rules": "^5.1.0",
     "tslint-react": "^2.5.0",
