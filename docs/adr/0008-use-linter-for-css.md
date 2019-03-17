@@ -1,4 +1,4 @@
-# Use stylelint for CSS / SCSS
+# Use linter for CSS / SCSS
 
 * Date: 2019-03-16
 
