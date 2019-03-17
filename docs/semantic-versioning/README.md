@@ -1,5 +1,4 @@
 # Semantic versioning
-
 [semantic versioning](https://semver.org/), based on [conventional commits](https://conventionalcommits.org/) uses a well defined scheme for versioning software.
 
 A semantic version has the form of `<major>.<minor>.<patch>`, e.g. `1.4.3`, whereas:
@@ -16,7 +15,9 @@ Tooling support is provided by [standard-version](https://github.com/conventiona
 ## Getting started
 
 ```shell
-yarn add standard-version --dev # alternatively npm install standard-version --save-dev
+npm install standard-version --save-dev
+# or
+yarn add standard-version --dev
 ```
 
 ## Configuration

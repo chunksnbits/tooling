@@ -1,6 +1,5 @@
 
 # Git Commit linting
-
 Commit messages should generally follow a format agreed within the development team to ensure consistency and clarity on how to write a commit.
 
 This guide recommends using a format based on [Google's Angular developer's guidelines](https://github.com/angular/angular/blob/master/CONTRIBUTING.md#commit), using a format of:
@@ -31,8 +30,9 @@ See respective Github projects for more details.
 ## Getting started
 
 ```shell
+npm install commitizen commitlint cz-customizable --save-dev
+# or
 yarn add commitizen commitlint cz-customizable --dev
-  # alternatively: npm install commitizen commitlint cz-customizable --save-dev
 ```
 
 ## Configuration

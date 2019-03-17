@@ -1,6 +1,5 @@
 
 # Git commit hooks
-## Overview
 The use of git commit hooks allows to ensure coding standard before merging changes into the development or master branch. In general hooks are advisable for:
 
 * linting(*)
@@ -16,7 +15,9 @@ See [documentation](https://github.com/typicode/husky/blob/dev/docs.md) for more
 
 ## Getting started
 ```shell
-yarn add husky --dev # alternatively npm install husky --save-dev
+npm install husky --save-dev
+# or
+yarn add husky --dev
 ```
 
 ## Configuration

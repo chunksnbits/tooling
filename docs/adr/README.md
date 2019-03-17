@@ -11,7 +11,7 @@ This log lists the architectural decisions for the tools and practices defined i
 - [ADR-0005](0005-use-typescript-in-javascript-projects.md) - Use typescript in javascript projects
 - [ADR-0006](0006-use-linter.md) - Use linter for keeping code well formatted
 - [ADR-0007](0007-use-mock-server-and-use-it-early.md) - Use mock server in your project setup and set it up when you start your project
-- [ADR-0008](0008-use-linter-for-css.md) - Use linter for CSS / SCSS
+- [ADR-0008](0008-use-linter-for-css.md) - Use linter for CSS
 
 <!-- adrlogstop -->
 

@@ -1,4 +1,4 @@
-# Use linter for CSS / SCSS
+# Use linter for CSS
 
 * Date: 2019-03-16
 
