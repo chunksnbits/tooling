@@ -39,7 +39,7 @@
       "componentSelectors": "^.{componentName}(?:__[-a-z]+)?(?:--[-a-z]+)?$"
     },
     "selector-type-no-unknown": [true, {
-      "ignoreTypes": ["/^\\[?audi/"]
+      "ignoreTypes": ["/^\\[?my-project/"]
     }],
   }
 }
