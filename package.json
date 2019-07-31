@@ -14,7 +14,6 @@
   "main": "index.js",
   "scripts": {
     "commit": "git-cz",
-    "commitlint": "commitlint -e $GIT_PARAMS",
     "lint": "tslint -p tsconfig.json && stylelint 'demo/**/*.scss'",
     "release": "standard-version"
   },
@@ -37,9 +36,7 @@
     "tslint": "^5.12.0",
     "tslint-eslint-rules": "^5.1.0",
     "tslint-react": "^4.0.0",
-    "typescript": "^3.2.2",
-    "yargs": "^13.2.2",
-    "yarn": "^1.7.0"
+    "typescript": "^3.2.2"
   },
   "devDependencies": {},
   "config": {
@@ -57,8 +54,8 @@
   },
   "husky": {
     "hooks": {
-      "commit-msg": "yarn commitlint",
-      "pre-push": "yarn lint"
+      "commit-msg": "commitlint -e $GIT_PARAMS",
+      "pre-push": "npm run lint"
     }
   }
 }
