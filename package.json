@@ -29,7 +29,7 @@
     "lodash": "^4.17.11",
     "rimraf": "^2.6.2",
     "serve": "^11.0.1",
-    "standard-version": "^6.0.1",
+    "standard-version": "^8.0.1",
     "stylelint": "^10.0.1",
     "stylelint-config-standard": "^18.2.0",
     "stylelint-selector-bem-pattern": "^2.0.0",
